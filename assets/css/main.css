@@ -733,6 +733,38 @@ section .hero {
   gap: 16px;
 }
 
+/* Hero facts/interests tags */
+.hero .facts-wrap .fact-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  background: var(--surface-color);
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  transition: 0.3s ease-in-out;
+}
+
+.hero .facts-wrap .fact-pill i {
+  color: var(--accent-color);
+}
+
+.hero .facts-wrap .fact-pill span {
+  font-size: 14px;
+}
+
+.hero .facts-wrap .fact-pill:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.hero .facts-wrap .fact-pill:focus-within {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
 @media (min-width: 992px) {
   .hero .portrait-wrap {
     will-change: transform;
@@ -1035,7 +1067,7 @@ section .hero {
 .about .facts-wrap .fact-pill:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
 }
 
 .about .facts-wrap .fact-pill:focus-within {
@@ -3458,9 +3490,3 @@ section .hero {
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
