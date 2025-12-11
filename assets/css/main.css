@@ -156,8 +156,13 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 70px;
   margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.header .logo img:hover {
+  transform: scale(1.05);
 }
 
 .header .logo h1 {
@@ -165,6 +170,39 @@ h6 {
   margin: 0;
   font-weight: 500;
   color: var(--heading-color);
+}
+
+/* Elegant Logo Styling */
+.header .logo .logo-initial {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #667eea 50%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-right: -2px;
+  font-family: var(--heading-font);
+  letter-spacing: -1px;
+  position: relative;
+  display: inline-block;
+}
+
+.header .logo .logo-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  letter-spacing: 0.5px;
+}
+
+.header .logo:hover .logo-initial {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
