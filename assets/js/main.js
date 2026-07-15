@@ -230,3 +230,25 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+new Swiper('.photos-slider', {
+  slidesPerView: 6,
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 6
+    }
+  }
+});
