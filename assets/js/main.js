@@ -231,32 +231,32 @@
 
 })();
 
-window.addEventListener('load', () => {
-
-  new Swiper('.photos-slider', {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
-    spaceBetween: 30,
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3
-      },
-      1200: {
-        slidesPerView: 6,
-        slidesPerGroup: 6
-      }
-    }
-  });
-
-});
+// window.addEventListener('load', () => {
+//
+//   new Swiper('.photos-slider', {
+//     slidesPerView: 6,
+//     slidesPerGroup: 6,
+//     spaceBetween: 30,
+//
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//
+//     breakpoints: {
+//       320: {
+//         slidesPerView: 1,
+//         slidesPerGroup: 1
+//       },
+//       768: {
+//         slidesPerView: 3,
+//         slidesPerGroup: 3
+//       },
+//       1200: {
+//         slidesPerView: 6,
+//         slidesPerGroup: 6
+//       }
+//     }
+//   });
+//
+// });
