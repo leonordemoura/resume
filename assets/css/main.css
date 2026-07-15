@@ -3529,17 +3529,3 @@ section .hero {
 
 
 }
-
-.photos-slider {
-  padding: 0 50px;
-}
-
-.photos-slider .swiper-button-next,
-.photos-slider .swiper-button-prev {
-  color: var(--accent-color);
-}
-
-.photos-slider .swiper-slide {
-  height: auto;
-}
-
