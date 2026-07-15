@@ -231,24 +231,32 @@
 
 })();
 
-new Swiper('.photos-slider', {
-  slidesPerView: 6,
-  spaceBetween: 30,
+window.addEventListener('load', () => {
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  new Swiper('.photos-slider', {
+    slidesPerView: 6,
+    slidesPerGroup: 6,
+    spaceBetween: 30,
 
-  breakpoints: {
-    320: {
-      slidesPerView: 1
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    768: {
-      slidesPerView: 3
-    },
-    1200: {
-      slidesPerView: 6
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      },
+      1200: {
+        slidesPerView: 6,
+        slidesPerGroup: 6
+      }
     }
-  }
+  });
+
 });

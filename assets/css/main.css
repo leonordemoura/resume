@@ -3526,5 +3526,20 @@ section .hero {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
+
+}
+
+.photos-slider {
+  padding: 0 50px;
+}
+
+.photos-slider .swiper-button-next,
+.photos-slider .swiper-button-prev {
+  color: var(--accent-color);
+}
+
+.photos-slider .swiper-slide {
+  height: auto;
 }
 
